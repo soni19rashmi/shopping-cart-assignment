@@ -1,0 +1,42 @@
+.signup-page {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+    .left {
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 32px;
+
+        .title {
+            margin-bottom: 0;
+        }
+        .description {
+            font-size: 14px;
+        }
+    }
+    .right {
+        width: 30vw
+    }
+}
+
+
+@media (max-width: 576px) {
+    .signup-page {
+        flex-direction: column;
+
+        .left {
+            .description {
+                display: none;
+            }
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
+}

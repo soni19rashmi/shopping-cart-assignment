@@ -1,0 +1,65 @@
+@import '../../scss/color.scss';
+
+.cart-item {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+
+    .item-image {
+        width: 30%;
+    }
+
+    .item-details {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+    
+        h4 {
+            font-weight: 700;
+            margin-top: 0;
+        }
+
+        .item-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .price-calc {
+                display: flex;
+                justify-content: space-evenly;
+                
+                span {
+                    margin: 0 8px;
+                }
+                .minus-btn, .plus-btn {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: $dark-red;
+                    color: $white;
+                    padding: 4px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 8px;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    &.disabled {
+                        cursor: not-allowed;
+                        pointer-events: none;
+                        background-color: $gray-1;
+                        color: $drak-gray;
+                    }
+                }
+            }
+
+            .total-price {
+                margin-left: auto;
+                white-space: nowrap;
+            }
+        }
+    }
+}

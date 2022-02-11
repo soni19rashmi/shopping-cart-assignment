@@ -1,0 +1,19 @@
+@import '../../scss/color.scss';
+
+.product-page {
+    display: flex;
+    align-items: center;
+
+    .products-container {
+        height: 100%;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .product-page {
+        .products-container {
+            flex-direction: column;
+        }
+    }
+}

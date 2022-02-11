@@ -1,0 +1,30 @@
+@import '../../scss/color.scss';
+
+.sidebar {
+    background-color: $gray;
+    padding: 16px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                display: block;
+                color: $drak-gray;
+                padding: 8px;
+                border-bottom: 1px solid $drak-gray;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+
+            .active {
+                background-color: $dark-red;
+                color: $white;
+            }
+        }
+    }
+}

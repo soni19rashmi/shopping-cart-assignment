@@ -1,0 +1,12 @@
+@import '../../scss/color.scss';
+
+footer {
+    background-color: $gray;
+    font-size: 16px;
+    font-weight: 700;
+    height: 60px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

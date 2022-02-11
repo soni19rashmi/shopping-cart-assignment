@@ -1,0 +1,10 @@
+@import '../../scss/color.scss';
+
+.action-btn {
+    background-color: $dark-red;
+    color: $white;
+    padding: 10px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
